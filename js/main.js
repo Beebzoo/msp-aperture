@@ -89,16 +89,26 @@ function initSlideshow() {
 // --- Page-specific renderers ---
 
 function renderHome(data) {
-  // Slideshow
+  // Slideshow — colorful Aperture-themed slides
   const ss = document.getElementById('homeSlideshow');
   if (ss) {
+    const slideColors = [
+      'linear-gradient(135deg, #D94880, #C64B99, #8B4DAB)',
+      'linear-gradient(135deg, #4B5EBD, #5BC0DE, #8BC34A)',
+      'linear-gradient(135deg, #E5A83B, #C96B3C, #D94880)'
+    ];
     ss.innerHTML = data.home.slideshow.map((s, i) => `
       <div class="slide ${i === 0 ? 'active' : ''}">
-        <div class="placeholder-img slide-img" style="position:absolute;inset:0;width:100%;height:100%;">${s.title}</div>
-        <div class="slide-overlay">
-          <h3>${s.title}</h3>
-          <p>${s.subtitle}</p>
-          <a href="${s.link}" class="slide-link">Learn more</a>
+        <div class="slide-color-bg" style="background:${slideColors[i % slideColors.length]};background-size:200% 200%;"></div>
+        <div class="slide-blobs">
+          <span class="slide-blob sb-1"></span>
+          <span class="slide-blob sb-2"></span>
+          <span class="slide-blob sb-3"></span>
+        </div>
+        <div class="slide-center-content">
+          <h2 class="slide-big-title">${s.title}</h2>
+          <p class="slide-big-subtitle">${s.subtitle}</p>
+          <a href="${s.link}" class="slide-link">Explore</a>
         </div>
       </div>
     `).join('') + `

@@ -483,67 +483,151 @@ body::before {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 0.6s ease;
+  transition: opacity 0.8s ease;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide.active { opacity: 1; }
 
-.slide-img {
+/* Colorful gradient background per slide */
+.slide-color-bg {
   position: absolute;
   inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  z-index: 0;
+  animation: slideGradientShift 8s ease infinite;
 }
 
-.slide-overlay {
-  position: relative;
+@keyframes slideGradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* Animated blobs inside each slide */
+.slide-blobs {
+  position: absolute;
+  inset: 0;
   z-index: 1;
-  width: 100%;
-  padding: 2rem;
-  background: linear-gradient(transparent, rgba(0,0,0,0.6));
+  overflow: hidden;
+  pointer-events: none;
 }
 
-.slide-overlay h3 { color: var(--clr-white); font-size: 1.5rem; margin-bottom: 0.25rem; }
-.slide-overlay p { color: rgba(255,255,255,0.85); font-size: 0.95rem; }
+.slide-blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.15;
+}
+
+.slide-blob.sb-1 {
+  width: 250px;
+  height: 250px;
+  background: rgba(255,255,255,0.3);
+  top: -60px;
+  right: -40px;
+  animation: slideBlobA 7s ease-in-out infinite;
+}
+
+.slide-blob.sb-2 {
+  width: 180px;
+  height: 180px;
+  background: rgba(255,255,255,0.2);
+  bottom: -50px;
+  left: -30px;
+  animation: slideBlobB 9s ease-in-out infinite;
+}
+
+.slide-blob.sb-3 {
+  width: 120px;
+  height: 120px;
+  background: rgba(255,255,255,0.25);
+  top: 40%;
+  left: 60%;
+  animation: slideBlobC 6s ease-in-out infinite;
+}
+
+@keyframes slideBlobA {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-30px, 20px) scale(1.15); }
+}
+
+@keyframes slideBlobB {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(40px, -25px) scale(1.1); }
+}
+
+@keyframes slideBlobC {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-20px, 15px) scale(1.2); }
+  66% { transform: translate(15px, -10px) scale(0.9); }
+}
+
+/* Centered big text content */
+.slide-center-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+}
+
+.slide-big-title {
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: var(--clr-white);
+  text-shadow: 0 3px 20px rgba(0,0,0,0.2);
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+  line-height: 1.1;
+}
+
+.slide-big-subtitle {
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.9);
+  font-weight: 500;
+  margin-bottom: 1.25rem;
+  text-shadow: 0 1px 6px rgba(0,0,0,0.1);
+}
 
 .slide-link {
   display: inline-block;
-  margin-top: 0.75rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.65rem 2rem;
   background: var(--clr-white);
   color: var(--clr-accent) !important;
-  font-weight: 600;
+  font-weight: 700;
   border-radius: 999px;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   transition: all var(--transition);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  letter-spacing: 0.02em;
 }
 
-.slide-link:hover { background: var(--clr-surface); transform: translateY(-1px); }
+.slide-link:hover {
+  background: var(--clr-surface);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.2);
+}
 
 .slideshow-dots {
   position: absolute;
   bottom: 1rem;
   right: 1.5rem;
-  z-index: 2;
+  z-index: 3;
   display: flex;
-  gap: 0.4rem;
+  gap: 0.5rem;
 }
 
 .slideshow-dot {
-  width: 10px;
-  height: 10px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  background: rgba(255,255,255,0.4);
+  background: rgba(255,255,255,0.35);
   border: 2px solid rgba(255,255,255,0.6);
   cursor: pointer;
-  transition: background var(--transition);
+  transition: all var(--transition);
 }
 
-.slideshow-dot.active { background: var(--clr-white); border-color: var(--clr-white); }
+.slideshow-dot:hover { background: rgba(255,255,255,0.6); }
+.slideshow-dot.active { background: var(--clr-white); border-color: var(--clr-white); transform: scale(1.15); }
 
 /* --- Section --- */
 .section {
@@ -1266,6 +1350,9 @@ body::before {
   .contact-grid { grid-template-columns: 1fr; }
 
   .slideshow { aspect-ratio: 16/9; }
+  .slide-big-title { font-size: 1.8rem; }
+  .slide-big-subtitle { font-size: 0.9rem; }
+  .slide-blob { display: none; }
 }
 
 @media (max-width: 480px) {
