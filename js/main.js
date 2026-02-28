@@ -16,9 +16,10 @@ function buildNav(data) {
   const nav = document.querySelector('.nav-links');
   if (!nav) return;
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
-  nav.innerHTML = data.navigation.map(item =>
-    `<li><a href="${item.href}" class="${item.href === currentPage ? 'active' : ''}">${item.label}</a></li>`
-  ).join('');
+  nav.innerHTML = data.navigation.map(item => {
+    const isActive = item.href === currentPage || (item.href === 'index.html' && (currentPage === '' || currentPage === '/'));
+    return `<li><a href="${item.href}" class="${isActive ? 'active' : ''}">${item.label}</a></li>`;
+  }).join('');
 }
 
 function setupMobileNav() {
