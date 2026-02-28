@@ -12,7 +12,7 @@
   <!-- Header -->
   <header class="site-header">
     <div class="container">
-      <a href="index.html" class="site-logo">
+      <a href="./" class="site-logo">
         <img src="images/aperture_logo.jpg" alt="Aperture Logo">
         <span>Aperture</span>
       </a>
@@ -25,7 +25,11 @@
 
   <!-- Hero -->
   <section class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg">
+      <div class="hero-blob-1"></div>
+      <div class="hero-blob-2"></div>
+      <div class="hero-blob-3"></div>
+    </div>
     <div class="hero-content">
       <img src="images/aperture_logo.jpg" alt="Aperture Logo" class="hero-logo">
       <h1>Studievereniging Aperture</h1>
@@ -33,15 +37,22 @@
     </div>
   </section>
 
+  <!-- Wave transition -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,40 L1440,80 L0,80 Z" fill="#f8f9fa"/>
+    </svg>
+  </div>
+
   <!-- Slideshow -->
-  <section class="section">
+  <section class="section section-decorated" style="background:var(--clr-surface);">
     <div class="container">
       <div class="slideshow" id="homeSlideshow"></div>
     </div>
   </section>
 
   <!-- Intro + Quick Links -->
-  <section class="section">
+  <section class="section section-decorated">
     <div class="container">
       <h2 class="section-title">Welcome to Aperture</h2>
       <p class="section-subtitle">Aperture is the official study association of the Maastricht Science Programme (MSP), part of the Faculty of Science and Engineering at Maastricht University. We enhance student life through events, clubs, committees, and community.</p>
@@ -49,8 +60,15 @@
     </div>
   </section>
 
+  <!-- Colorful wave before board -->
+  <div class="wave-divider">
+    <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+      <path d="M0,60 C240,20 480,70 720,40 C960,10 1200,60 1440,30 L1440,80 L0,80 Z" fill="#f8f9fa"/>
+    </svg>
+  </div>
+
   <!-- Board -->
-  <section class="section board-section">
+  <section class="section board-section section-decorated" style="background:var(--clr-surface);">
     <div class="container">
       <h2 class="section-title">The Board <span id="boardYear"></span></h2>
       <div class="board-photo placeholder-img" style="height:300px;border-radius:var(--radius-lg);">Board photo</div>
