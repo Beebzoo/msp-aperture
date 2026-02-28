@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Studievereniging Aperture</title>
+  <meta name="description" content="Get in touch with Studievereniging Aperture. Ideas, improvements, complaints, or deeply terrifying memes.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="contact">
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="site-logo"><span>Aperture</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <ul class="nav-links"></ul>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="section-title">Contact</h1>
+      <p class="section-subtitle">Ideas? Improvements? Complaints? Deeply terrifying memes?</p>
+
+      <div class="contact-grid">
+        <!-- Form -->
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required placeholder="What's on your mind?"></textarea>
+          </div>
+          <button type="submit" class="btn">Send Message</button>
+          <p class="mt-1" style="font-size:0.75rem;color:var(--clr-text-muted);">Opens your email client with the message pre-filled.</p>
+        </form>
+
+        <!-- Info -->
+        <div class="contact-info">
+          <div class="contact-block">
+            <h3>Email</h3>
+            <p id="contactEmail"></p>
+          </div>
+
+          <div class="contact-block">
+            <h3>Address</h3>
+            <div id="contactAddress"></div>
+          </div>
+
+          <div class="contact-block">
+            <h3>Office Hours</h3>
+            <p id="officeHours"></p>
+          </div>
+
+          <div class="contact-block">
+            <h3>Socials</h3>
+            <div class="social-links" id="contactSocials"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container"></div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

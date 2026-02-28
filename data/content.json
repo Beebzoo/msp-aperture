@@ -1,0 +1,350 @@
+{
+  "site": {
+    "name": "Studievereniging Aperture",
+    "shortName": "Aperture",
+    "tagline": "The Study Association of MSP",
+    "description": "Studievereniging Aperture is the official study association of the Maastricht Science Programme (MSP). Founded on 6 November 2012, we provide study-oriented and recreational activities to MSP students.",
+    "logoAlt": "Aperture Logo",
+    "founded": "6 November 2012",
+    "kvk": "56414455"
+  },
+
+  "navigation": [
+    { "label": "Home", "href": "index.html" },
+    { "label": "About", "href": "about.html" },
+    { "label": "Committees & Clubs", "href": "committees.html" },
+    { "label": "Events", "href": "events.html" },
+    { "label": "Merch", "href": "merch.html" },
+    { "label": "Contact", "href": "contact.html" }
+  ],
+
+  "home": {
+    "hero": {
+      "title": "Studievereniging Aperture",
+      "subtitle": "The study association of Maastricht Science Programme"
+    },
+    "intro": {
+      "title": "Welcome to Aperture",
+      "description": "Aperture is the official study association of the Maastricht Science Programme (MSP), part of the Faculty of Science and Engineering at Maastricht University. We enhance student life through events, clubs, committees, and community."
+    },
+    "slideshow": [
+      {
+        "title": "Merch",
+        "subtitle": "Get the legendary MSP hoodies",
+        "image": "images/slides/merch.jpg",
+        "link": "merch.html"
+      },
+      {
+        "title": "Events",
+        "subtitle": "Find out what's happening next",
+        "image": "images/slides/events.jpg",
+        "link": "events.html"
+      },
+      {
+        "title": "Committees & Clubs",
+        "subtitle": "Find your people",
+        "image": "images/slides/committees.jpg",
+        "link": "committees.html"
+      }
+    ],
+    "quickLinks": [
+      { "label": "Join a Committee", "href": "committees.html", "icon": "users" },
+      { "label": "Upcoming Events", "href": "events.html", "icon": "calendar" },
+      { "label": "Order Merch", "href": "merch.html", "icon": "shopping-bag" },
+      { "label": "Contact Us", "href": "contact.html", "icon": "mail" }
+    ]
+  },
+
+  "board": {
+    "title": "The Board",
+    "year": "2025–2026",
+    "photo": "images/board/board-2025-2026.jpg",
+    "members": [
+      { "name": "Ella Opsteeg", "role": "President" },
+      { "name": "Defne Adaş", "role": "Secretary" },
+      { "name": "Ishmael Zivan", "role": "Treasurer" },
+      { "name": "Riddhi Mohanto", "role": "Head of Merch & PR" },
+      { "name": "Liam Brinkmann", "role": "Head of Clubs & Committees" }
+    ]
+  },
+
+  "about": {
+    "what": {
+      "title": "What is Aperture?",
+      "description": "Studievereniging Aperture is the official study association of the Maastricht Science Programme (MSP), part of the Faculty of Science and Engineering (FSE) at Maastricht University. Founded on 6 November 2012, Aperture provides study-oriented and recreational activities to MSP students, as well as other student-oriented services.",
+      "facts": [
+        "All enrolled MSP students are automatic members",
+        "Membership fees are covered by MSP — it's free",
+        "We manage the MSP common room",
+        "We run 7 committees and 5 clubs",
+        "We organise merch sales, the Graduation Party, and the legendary Pyjama Days"
+      ]
+    },
+    "getInvolved": {
+      "title": "Get Involved",
+      "options": [
+        {
+          "title": "Join a Committee or Club",
+          "description": "Sign-up forms are shared at the MSP Fair each September and through our WhatsApp community year-round."
+        },
+        {
+          "title": "Run for the Board",
+          "description": "Board elections happen twice a year: Secretary, HoC, and HoMPR in November; President and Treasurer in May. Candidates present themselves at the GMM."
+        },
+        {
+          "title": "Start a New Club",
+          "description": "Have an idea? Talk to the Head of Clubs & Committees. You need a group of interested members and willingness to organise regular activities."
+        },
+        {
+          "title": "Join the PR Team",
+          "description": "Help with Instagram content, event photography, and promotional materials. Reach out via Instagram DMs or email."
+        }
+      ]
+    },
+    "history": {
+      "title": "Our History",
+      "timeline": [
+        { "year": "2012", "text": "Studievereniging Aperture is founded and registered at the KvK." },
+        { "year": "2017–18", "text": "Aperture Protocol created. First documented CERN trip planning. First hoodie sales." },
+        { "year": "2018–19", "text": "Geneva/CERN trip executed. London trip followed in 2019." },
+        { "year": "2019–20", "text": "The 'Big Bible' written, msp-aperture.com website launched, Active Members program established. Cut short by COVID-19." },
+        { "year": "2020–22", "text": "Navigating COVID and rebuilding operations." },
+        { "year": "2023–24", "text": "Head of Merch & PR introduced as 5th board position." },
+        { "year": "2025–26", "text": "Current board. CERN trip to Geneva via Nancy. Website rebuild underway." }
+      ]
+    },
+    "pastBoards": [
+      { "year": "2024–2025", "members": "Julian Haverkamp (Treasurer), Cristina Moisuc (Secretary)" },
+      { "year": "2022–2023", "members": "Sanne Aarts (President), Freek Driessen (VP & Secretary)" },
+      { "year": "2021–2022", "members": "Sanne Aarts (President), Freek Driessen (VP & Secretary)" },
+      { "year": "2020–2021", "members": "Felix Ritter (President), Sam (Secretary)" },
+      { "year": "2019–2020", "members": "Maansi (President), Leo (VP), Kabir Arora (Treasurer), Hikaru Ishikura (HoC)" },
+      { "year": "2018–2019", "members": "Danya BenYosef (President), Abraham Grosman-Cordero (Secretary), Barbara Sanchez Martínez (Treasurer), Raquel Grosman" },
+      { "year": "2017–2018", "members": "Julie Grosse-Sommer (President), Alice Buchner (Secretary), Megan Entzinger (Treasurer)" }
+    ]
+  },
+
+  "committees": {
+    "intro": {
+      "committeesDescription": "Committees plan larger events open to the entire MSP community and beyond — from Open Mic nights and lectures to themed parties and charity fundraisers.",
+      "clubsDescription": "Clubs are student-led interest groups focused on activities for their own members, where everyone can gather and enjoy a shared hobby.",
+      "callToAction": "Join an existing committee or club, or start your own — talk to the Head of Clubs & Committees to get started."
+    },
+    "list": [
+      {
+        "name": "Academic Committee",
+        "type": "committee",
+        "description": "Organises the 'Broaden your Aperture' (BYA) lecture series, quiz nights, and academic info sessions. Invites researchers from various fields to speak.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Booksale Committee",
+        "type": "committee",
+        "description": "Organises biannual booksales at the start of each semester in partnership with Boekhandel Dominicanen. MSP students get a 12% discount on textbooks.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Charity Committee",
+        "type": "committee",
+        "description": "Organises fundraisers and awareness events for charitable causes. Known for their legendary waffle sales.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Events Committee (APEC)",
+        "type": "committee",
+        "description": "The most active committee — organises weekly common room events like movie nights, board game nights, and bouldering trips, plus larger periodic events.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Music Committee",
+        "type": "committee",
+        "description": "Organises Open Mic nights and manages Aperture's musical instruments and equipment. Funds gear through waffle sales.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Party Committee",
+        "type": "committee",
+        "description": "Throws the best MSP parties — typically one per period — plus the annual Graduation Party, the biggest event of the year.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Trip Committee",
+        "type": "committee",
+        "description": "Organises trips for MSP, including the legendary biennial CERN trip. Also coordinates NIKHEF visits with the Academic Committee.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Hello Kitty Football Club",
+        "type": "club",
+        "description": "The most established club, competing in a local league. Active, well-attended, and always looking for new players.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "BEAR Club",
+        "type": "club",
+        "description": "An active club with engaged membership and regular meetups.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Minecraft Club",
+        "type": "club",
+        "description": "Gaming club for Minecraft enthusiasts. Revived in late 2025 and going strong.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "Astronomy Club",
+        "type": "club",
+        "description": "For stargazers and space enthusiasts — organises observation nights and astronomy talks.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      },
+      {
+        "name": "D&D Club",
+        "type": "club",
+        "description": "One of the longest-running and most popular clubs. Multiple groups, each with their own Dungeon Master, running regular campaigns and one-shots.",
+        "president": "",
+        "presidentPhoto": "",
+        "instagram": "",
+        "signupLink": ""
+      }
+    ]
+  },
+
+  "events": {
+    "intro": "Check out upcoming events organised by Aperture and its committees and clubs. For the latest updates, follow us on Instagram or join our WhatsApp community.",
+    "calendarEmbed": "",
+    "upcoming": [],
+    "traditions": [
+      { "name": "Pyjama Day", "description": "Every Friday before exam week. Free pancakes, chocolate milk, and toppings in the common room.", "icon": "moon" },
+      { "name": "Graduation Party", "description": "The biggest event of the year in June, celebrating MSP graduates with a DJ, photographer, and drinks.", "icon": "party" },
+      { "name": "CERN Trip", "description": "Biennial trip to CERN near Geneva — the ultimate MSP science pilgrimage.", "icon": "rocket" },
+      { "name": "MSP Fair", "description": "All clubs and committees present themselves at the start of the year to recruit new members.", "icon": "handshake" },
+      { "name": "Booksale", "description": "Biannual textbook sale at the start of each semester with 12% student discount.", "icon": "book" },
+      { "name": "GMM", "description": "General Members' Meeting — at least twice a year. The board presents plans and budgets. There's always free pizza.", "icon": "pizza" }
+    ]
+  },
+
+  "chronicle": {
+    "intro": "The Aperture Chronicle is our student magazine, written by and for MSP students. Download past issues below.",
+    "issues": [
+      {
+        "title": "Issue 3",
+        "cover": "images/chronicle/issue3-cover.jpg",
+        "description": "The third issue of the Aperture Chronicle.",
+        "pdf": "files/chronicle/issue3.pdf",
+        "date": "2022"
+      },
+      {
+        "title": "Fundamentals — Building a Solid Core",
+        "cover": "images/chronicle/fundamentals-cover.jpg",
+        "description": "A special article from Issue 2 about building a solid core.",
+        "pdf": "files/chronicle/fundamentals.pdf",
+        "date": "2021"
+      },
+      {
+        "title": "Issue 2",
+        "cover": "images/chronicle/issue2-cover.jpg",
+        "description": "The second issue of the Aperture Chronicle.",
+        "pdf": "files/chronicle/issue2.pdf",
+        "date": "2021"
+      },
+      {
+        "title": "Issue 1",
+        "cover": "images/chronicle/issue1-cover.jpg",
+        "description": "The very first issue of the Aperture Chronicle.",
+        "pdf": "files/chronicle/issue1.pdf",
+        "date": "2021"
+      }
+    ]
+  },
+
+  "merch": {
+    "intro": "The legendary MSP hoodies. Legendary quality, all the legendary colours.",
+    "description": "Front: 'MSP — Maastricht University'. Back: Maastricht Science Programme logo with aperture motif. Sleeves: Your personalised name or nickname.",
+    "items": [
+      {
+        "name": "MSP Hoodie",
+        "description": "Classic MSP hoodie with custom nickname on the sleeve. Available in multiple colours. Sold at the start of each academic year (September/October).",
+        "images": ["images/merch/hoodie-front.jpg", "images/merch/hoodie-back.jpg"],
+        "price": "~€25–30",
+        "orderLink": "",
+        "available": false,
+        "nextSale": "Hoodie sale opens in September — follow our socials for the order form!"
+      },
+      {
+        "name": "MSP T-shirt",
+        "description": "Lighter option with more colour variety. Sold in Period 4 (March/April).",
+        "images": ["images/merch/tshirt-front.jpg"],
+        "price": "~€8",
+        "orderLink": "",
+        "available": false,
+        "nextSale": "T-shirt sale opens in Period 4 — follow our socials!"
+      },
+      {
+        "name": "Graduation Hoodie",
+        "description": "Special 'Class of [Year]' edition with sleeve print. Limited run for graduating students.",
+        "images": ["images/merch/grad-hoodie.jpg"],
+        "price": "",
+        "orderLink": "",
+        "available": false,
+        "nextSale": "Available to graduating students in May/June."
+      }
+    ],
+    "howToOrder": "Merch sale forms are announced via our WhatsApp community and Instagram. Payment is via bank transfer. Pickup from the Aperture office during office hours (Mon, Wed, Thu 10:00–12:00). You have 3 months to collect after arrival.",
+    "gallery": []
+  },
+
+  "contact": {
+    "address": {
+      "line1": "Studievereniging Aperture",
+      "line2": "Kapoenstraat 2",
+      "line3": "6211 KW Maastricht",
+      "country": "Netherlands"
+    },
+    "tagline": "Ideas? Improvements? Complaints? Deeply terrifying memes?",
+    "email": "msp-aperture@maastrichtuniversity.nl",
+    "socials": {
+      "instagram": "https://www.instagram.com/msp_aperture/",
+      "linktree": "https://linktr.ee/aperture_msp"
+    },
+    "officeHours": "Monday, Wednesday, Thursday: 10:00–12:00"
+  },
+
+  "footer": {
+    "copyright": "Studievereniging Aperture",
+    "year": "2025",
+    "kvk": "56414455"
+  }
+}
